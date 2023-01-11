@@ -1,13 +1,9 @@
 package com.gajanan.rocketapp.modalClass
 
-import android.os.Parcelable
 import androidx.room.*
-import com.google.gson.annotations.SerializedName
-import kotlinx.parcelize.Parcelize
-import org.jetbrains.annotations.NotNull
 import javax.annotation.Nonnull
 
-@kotlinx.serialization.Serializable
+
 @Entity(tableName = "rockets")
 data class RocketDetailResponse(
     @PrimaryKey(autoGenerate = false)
@@ -46,9 +42,7 @@ data class RocketDetailResponse(
 
     @ColumnInfo("wikipedia")
     var wikipedia: String?= null,
-    ){
-
-}
+    )
 
 
 @Entity
